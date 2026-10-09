@@ -714,6 +714,24 @@ log_event(log_message);
             break;
         }
 
+else if (strncmp(buffer, "HELP", 4) == 0)
+{
+    char response[] =
+        "OK HELP NID:6059\n"
+        "REGISTER <username>\n"
+        "LIST\n"
+        "BCAST <message>\n"
+        "PMSG <username> <message>\n"
+        "JOIN <room>\n"
+        "LEAVE <room>\n"
+        "ROOMS\n"
+        "RMSG <room> <message>\n"
+        "SENDFILE <target> <filename> <filesize>\n"
+        "QUIT\n";
+
+    send(client_fd, response, strlen(response), 0);
+}
+
         /* UNKNOWN COMMAND */
         else
         {

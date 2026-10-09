@@ -32,3 +32,7 @@
 
 [2026-10-06 06:23:31] PMSG from clinet1 to client2: Hello client2
 [2026-10-06 06:27:15] RMSG from clinet1 in room room1: Hello room
+[2026-10-09 11:55:59] Client registered: REGISTER
+[2026-10-09 11:56:14] BCAST from REGISTER: Hello
+
+[2026-10-09 13:49:30] Client registered: Registered
